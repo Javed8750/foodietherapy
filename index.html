@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Foodie Therapy</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.png">
+    <meta charset="utf-8">
+    <meta name="description" content="Food Delivery">
+    <meta name="keywords" content="Meal,Food,Pizza,Burger,Chinese Food,">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- PRELOADER -->
+    <div id="preloader">
+        <div id="status">
+            <img src="preloader.gif">
+        </div>
+    </div>
+    <!-- PRELOADER ends -->
+    <!-- HEADER -->
+    <nav id="header">
+        <div id="menu" class="topnav">
+            <a href="#home" class="menubtn logo" id="white"><img src="logo-white.png" width="100"></a>
+            <a href="#home" class="menubtn logo" id="black"><img src="logo-black.png" width="100"></a>
+            <a href="#food" class="menubtn">food</a>
+            <a href="#about" class="menubtn">about</a>
+            <a href="#service" class="menubtn">service</a>
+            <a href="#contact" class="menubtn">contact</a>
+            <a href="#help" class="menubtn">help</a>
+            <a href="javascript:void(0);" class="icon menubtn" onclick="navBar()">
+                <img src="menu.png">
+            </a>
+        </div>
+    </nav>
+    <!-- HEADER ends -->
+    
+    <!-- HOME SECTION -->
+    <section id="home">
+        <!-- Background Video -->
+        <div id="background">
+            <div id="video">
+                <video id="bg-video" autoplay loop muted>
+                    <source src="video.mp4" type="video/mp4">
+                    <source src="video.ogv" type="video/ogg">
+                    <source src="video.webm" type="video/webm">
+                </video>
+            </div>
+        </div>
+        <!-- OVERLAY ON BACKGROUND -->
+        <div id="bg-overlay"></div>
+        <!-- Home Content -->
+        <div class="container">
+            <div class="row">
+                <div id="home-content">
+                    <div id="motto">
+                        <h1>For the foodie one</h1>
+                    </div>
+
+                    <div id="button">
+                        <a href=#food id="home-btn">Start Order</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- HOME SECTION ends -->
+    
+    <!-- FOOD SECTION -->
+    <section id="food">
+        <!-- Tab Menu -->
+        <nav id="tab">
+            <div id="tab-menu">
+                <a href="#default" class="tab-btn" onclick="opentab(event,'default')">all</a>
+                <a href="#pizza" class="tab-btn" onclick="opentab(event,'pizza')">pizza</a>
+                <a href="#burger" class="tab-btn" onclick="opentab(event,'burger')">burger</a>
+                <a href="#chicken" class="tab-btn" onclick="opentab(event,'chicken')">chicken</a>
+                <a href="#meal" class="tab-btn" onclick="opentab(event,'meal')">meal</a>
+                <a href="#drink" class="tab-btn" onclick="opentab(event,'drink')">drink</a>
+            </div>
+        </nav>
+        <!-- DEFAULT Tab -->
+        <div id="default" class="tabcontent">
+            <div class="row">
+                <div class="col-4">
+                    <div class="img-container">
+                        <img src="burger-1.jpg">
+                        <div class="description">
+                            CHICKEN BURGER<br>
+                            Price:- 149 INR<br>
+                            Combo(2):- 219 INR<br><br>
+                            <a href="#contact">ORDER NOW</a>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img src="meal-1.jpg">
+                        <div class="description">
+                           TORTILLA WITH PANEER<br>
+                           Price:- 99 INR<br>
+                           Combo(2):- 149 INR<br><br>
+                           <a href="#contact">ORDER NOW</a> 
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img src="drink-2.jpg">
+                        <div class="description">
+                            COCA-COLA DRINK<br>
+                            Price:- 36 INR<br><br>
+                            <a href="#contact">ORDER NOW</a>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img src="burger-4.jpg">
+                        <div class="description">
+                            VEG BURGER & FRIES<br>
+                            Price:-99 INR<br>
+                            Combo(2):- 199 INR<br><br>
+                            <a href="#contact">ORDER NOW</a>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img src="chicken-4.jpg">
+                        <div class="description">
+                            BARBEQUE CHICKEN<br>
+                            Price(4pc):- 299 INR<br><br>
+                            <a href="#contact">ORDER NOW</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="img-container">
+                        <img src="meal-2.jpg">
+                        <div class="description">
+                            FRIED RICE<br>
+                            Price:- 149 INR<br><br>
+                            <a href="#contact">ORDER NOW</a>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img src="pizza-1.jpg">
+                        <div class="description">
+                            PANEER PIZZA<br>
+                            Price:- 139 INR<br><br>
+                            <a href="#contact">ORDER NOW</a>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img src="chicken-1.jpg">
+                        <div class="description">
+                            CHICKEN LOLIPOP<br>
+                            Price(4):-239 INR<br><br> 
+                            <a href="#contact">ORDER NOW</a>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img src="meal-3.jpg">
+                        <div class="description">
+                            CARROT PUDDING<br>
+                            Price:- 99 INR<br><br>
+                            <a href="#contact">ORDER NOW</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="img-container">
+                        <img src="chicken-3.jpg">
+                        <div class="description">
+                            CRUMBLED CHICKEN<br>
+                            Price:- 349 INR<br><br>
+                            <a href="#contact">ORDER NOW</a>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img src="burger-2.jpg">
+                        <div class="description">
+                            CHEEZY CHICKEN BURGER<br>
+                            Price:- 119 INR<br>
+                            Combo(2):- 219 INR<br><br>
+                            <a href="#contact">ORDER NOW</a>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img src="chicken-2.jpg">
+                        <div class="description">
+                            GRILLED CHICKEN<br>
+                            Price:- 399 INR<br><br>
+                            <a href="#contact">ORDER NOW</a>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img src="pizza-3.jpg">
+                        <div class="description">
+                            BERRY PIZZA<br>
+                            Price:- 139 INR<br><br>
+                            <a href="#contact">ORDER NOW</a>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img src="pizza-6.jpg">
+                        <div class="description">
+                            CHICKEN PIZZA<br>
+                            Price:- 169 INR<br><br>
+                            <a href="#contact">ORDER NOW</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- PIZZA Tab -->
+        <div id="pizza" class="tabcontent">
+            <div class="row">
+                <div class="col-4">
+                    <div class="img-container">
+                        <img src="pizza-4.jpg">
+                        <div class="description">
+                            VEG CHEEZZY PIZZA<br>
+                            Price:- 239 INR<br><br>
+                            <a href="#contact">ORDER NOW</a>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img src="pizza-2.jpg">
+                        <div class="description">
+                            CAPSICUM PIZZA<br>
+                            Price:- 159 INR<br><br>
+                            <a href="#contact">ORDER NOW</a>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img src="pizza-3.jpg">
+                        <div class="description">
+                            BERRY PIZZA<br>
+                            Price:- 139 INR<br><br>
+                            <a href="#contact">ORDER NOW</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="img-container">
+                        <img src="pizza-5.jpg">
+                        <div class="description">
+                            CHEESE BURST PIZZA<br>
+                            Price:- 169 INR<br><br>
+                            <a href="#contact">ORDER NOW</a>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img src="pizza-9.jpg">
+                        <div class="description">
+                            TOMATO PIZZA<br>
+                            Price:- 149 INR<br><br>
+                            <a href="#contact">ORDER NOW</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="img-container">
+                        <img src="pizza-7.jpg">
+                        <div class="description">
+                            PANEER VEG PIZZA<br>
+                            Price:- 199 INR<br><br>
+                            <a href="#contact">ORDER NOW</a>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img src="pizza-8.jpg">
+                        <div class="description">
+                            CHILLI PIZZA<br>
+                            Price:- 169 INR<br><br>
+                            <a href="#contact">ORDER NOW</a>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img src="pizza-6.jpg">
+                        <div class="description">
+                            CHICKEN PIZZA<br>
+                            Price:- 169 INR<br><br>
+                            <a href="#contact">ORDER NOW</a>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img src="pizza-1.jpg">
+                        <div class="description">
+                            PANEER PIZZA<br>
+                            Price:- 139 INR<br><br>
+                            <a href="#contact">ORDER NOW</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- BURGER Tab -->
+        <div id="burger" class="tabcontent">
+            <div class="row">
+                <div class="col-4">
+                    <div class="img-container">
+                        <img src="burger-1.jpg">
+                        <div class="description">
+                            CHICKEN BURGER<br>
+                            Price:- 149 INR<br>
+                            Combo(2):- 219 INR<br><br>
+                            <a href="#contact">ORDER NOW</a>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img src="burger-2.jpg">
+                        <div class="description">
+                            CHEEZY CHICKEN BURGER<br>
+                            Price:- 119 INR<br>
+                            Combo(2):- 219 INR<br><br>
+                            <a href="#contact">ORDER NOW</a>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img src="burger-4.jpg">
+                        <div class="description">
+                            VEG BURGER & FRIES<br>
+                            Price:- 99 INR<br>
+                            Combo(2):- 199 INR<br><br>
+                            <a href="#contact">ORDER NOW</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="img-container">
+                        <img src="burger-5.jpg">
+                        <div class="description">
+                            NON_VEG BURGER & FRIES<br>
+                            Price:-149 INR<br>
+                            Combo(2):- 229 INR<br><br>
+                            <a href="#contact">ORDER NOW</a>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img src="burger-7.jpg">
+                        <div class="description">
+                            CHEESE VEG BURGER<br>
+                            Price:- 89 INR<br>
+                            Combo(2):- 150 INR<br>
+                            <a href="#contact">ORDER NOW</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="img-container">
+                        <img src="burger-3.jpg">
+                        <div class="description">
+                            CHICKEN BURGER<br>
+                            Price:- 99 INR<br>
+                            Combo(2):- 189 INR<br><br>
+                            <a href="#contact">ORDER NOW</a>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img src="burger-6.jpg">
+                        <div class="description">
+                            FULL VEG BURGER<br>
+                            Price:- 79 INR<br>
+                            Combo(2):- 150 INR<br><br> 
+                            <a href="#contact">ORDER NOW</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- CHICKEN Tab -->
+        <div id="chicken" class="tabcontent">
+            <div class="row">
+                <div class="col-4">
+                    <div class="img-container">
+                        <img src="chicken-1.jpg">
+                        <div class="description">
+                            CHICKEN LOLIPOP<br>
+                            Price(4):- 239 INR<br><br>
+                            <a href="#contact">ORDER NOW</a>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img src="chicken-2.jpg">
+                        <div class="description">
+                            GRILLED CHICKEN<br>
+                            Price:- 399 INR<br><br>
+                            <a href="#contact">ORDER NOW</a>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img src="chicken-3.jpg">
+                        <div class="description">
+                            CRUMBLED CHICKEN<br>
+                            Price:- 349 INR<br><br>
+                            <a href="#contact">ORDER NOW</a>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img src="chicken-4.jpg">
+                        <div class="description">
+                            BARBEQUE CHICKEN<br>
+                            Price(4pc):- 299 INR<br><br>
+                            <a href="#contact">ORDER NOW</a>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img src="chicken-10.jpg">
+                        <div class="description">
+                            CHICKEN ROLL<br>
+                            Price:- 99 INR<br><br>
+                            <a href="#contact">ORDER NOW</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="img-container">
+                        <img src="chicken-5.jpg">
+                        <div class="description">
+                            CHILLI CHICKEN<br>
+                            Price:- 199 INR<br><br>
+                            <a href="#contact">ORDER NOW</a>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img src="chicken-6.jpg">
+                        <div class="description">
+                            CHICKEN POPCORN<br>
+                            Price:- 149 INR<br><br>
+                            <a href="#contact">ORDER NOW</a>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img src="chicken-7.jpg">
+                        <div class="description">
+                            MASHED CHICKEN<br>
+                            Price:- 119 INR<br><br>
+                            <a href="#contact">ORDER NOW</a>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img src="chicken-12.jpg">
+                        <div class="description">
+                            CHICKEN WINGS<br>
+                            Price:- 199 INR<br><br>
+                            <a href="#contact">ORDER NOW</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="img-container">
+                        <img src="chicken-8.jpg">
+                        <div class="description">
+                            JUICY CHINESE CHICKEN<br>
+                            Price:- 239 INR<br><br>
+                            <a href="#contact">ORDER NOW</a>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img src="chicken-9.jpg">
+                        <div class="description">
+                            CHICKEN BIRYANI<br>
+                            Price:- 149 INR<br><br>
+                            <a href="#contact">ORDER NOW</a>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img src="chicken-11.jpg">
+                        <div class="description">
+                            KADHAI CHICKEN LOLIPOP<br>
+                            Price:- 249 INR<br><br>
+                            <a href="#contact">ORDER NOW</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- MEAL Tab -->
+        <div id="meal" class="tabcontent">
+            <div class="row">
+                <div class="col-4">
+                    <div class="img-container">
+                        <img src="meal-3.jpg">
+                        <div class="description">
+                            CARROT PUDDING<br>
+                            Price:- 99 INR<br><br>
+                            <a href="#contact">ORDER NOW</a>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img src="meal-6.jpg">
+                        <div class="description">
+                            IDLI SAMBAR<br>
+                            Price:- 89 INR<br><br>
+                            <a href="#contact">ORDER NOW</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="img-container">
+                        <img src="meal-4.jpg">
+                        <div class="description">
+                            BIRYANI<br>
+                            Price:- 69 INR<br><br>
+                            <a href="#contact">ORDER NOW</a>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img src="meal-1.jpg">
+                        <div class="description">
+                            TORTILLA WITH PANEER<br>
+                            Price:- 99 INR<br>
+                            Combo(2):- 149 INR<br><br>
+                            <a href="#contact">ORDER NOW</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="img-container">
+                        <img src="meal-7.jpg">
+                        <div class="description">
+                            SAMOSA<br>
+                            Price:- 10 INR<br>
+                            Combo(2):- 15 INR<br><br>
+                            <a href="#contact">ORDER NOW</a>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img src="meal-5.jpg">
+                        <div class="description">
+                            TORTILLA PULCES<br>
+                            Price:- 59 INR<br><br>
+                            <a href="#contact">ORDER NOW</a>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img src="meal-2.jpg">
+                        <div class="description">
+                            FRIED RICE<br>
+                            Price:- 149 INR<br><br>
+                            <a href="#contact">ORDER NOW</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- DRINK Tab -->
+        <div id="drink" class="tabcontent">
+            <div class="row">
+                <div class="col-4">
+                    <div class="img-container">
+                        <img src="drink-2.jpg">
+                        <div class="description">
+                            COCA-COLA DRINK<br>
+                            Price:- 36 INR<br><br>
+                            <a href="#contact">ORDER NOW</a>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img src="drink-1.jpg">
+                        <div class="description">
+                            MANGO JUICE<br>
+                            Price:- 40 INR<br><br>
+                            <a href="#contact">ORDER NOW</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="img-container">
+                        <img src="drink-6.jpg">
+                        <div class="description">
+                            TEA<br>
+                            Price:- 15 INR<br><br>
+                            <a href="#contact">ORDER NOW</a>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img src="drink-3.jpg">
+                        <div class="description">
+                            STRAWBERRY SMOOTHIE<br>
+                            Price:- 59 INR<br><br>
+                            <a href="#contact">ORDER NOW</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="img-container">
+                        <img src="drink-4.jpg">
+                        <div class="description">
+                            PEPSI<br>
+                            Price:- 36 INR<br><br>
+                            <a href="#contact">ORDER NOW</a>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img src="drink-5.jpg">
+                        <div class="description">
+                            COFFEE<br>
+                            Price:- 70 INR<br><br>
+                            <a href="#contact">ORDER NOW</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FOOD SECTION ends -->
+    
+    <!-- ABOUT SECTION -->
+    <section id="about">
+        <div id="about-img">
+            <img src="about.png" alt="About">
+        </div>
+        <div id="about-content">
+            <div class="row">
+                <div class="col-6">
+                    <h1><span id="big-text">about</span><br><span id="small-text">us</span></h1>
+                </div> 
+                <div class="col-6">
+                    <p id="about-para">
+                        We believe in growing and establishing our relationship with customers. Food is the only thing which changes your mood that's why we changing mood over a wide range with our home delivery services. Not only taste, the delivery services also put smile on your face.
+                    </p>
+                </div> 
+            </div>
+        </div>
+    </section>
+    <!-- ABOUT SECTION ends -->
+    
+    <!-- SERVICE SECTION -->
+    <section id="service">
+        <div id="service-container">
+            <!-- FOR SERVICE PART 1 -->
+            <div class="row" id="service-1">
+               <!-- FOR HEADING -->
+                <div class="col-6">
+                    <h1><span id="big-service-text">our</span><br><span id="small-service-text">services</span></h1>
+                </div> 
+                <!-- FOR TRANSPORT -->
+                <div class="col-6" id="service-transport">
+                <h3>transport</h3>
+                <ul>
+                    <li>cycle</li>
+                    <li>bike</li>
+                    <li>scooter</li>
+                    <li>car</li>
+                </ul>
+                </div> 
+            </div>
+            <!-- FOR SERVICE PART 2 -->
+            <div class="row" id="service-2">
+               <!-- FOR RADIUS -->
+                <div class="col-6" id="radius">
+                    <h3>radius</h3>
+                    <ul>
+                        <li>new delhi</li>
+                        <li>ghaziabad</li>
+                        <li>gurugram</li>
+                        <li>faridabad</li>
+                        <li>noida</li>
+                        <li>greater noida</li>
+                        <li>rohini</li>
+                        <li>shadra</li>
+                    </ul>
+                </div>
+                <!-- FOR DELIVERY TIMIMGS --> 
+                <div class="col-6" id="delivery-time">
+                    <h3>delivery time<span>(max)</span></h3>
+                    <ul>
+                        <li>- 2hr30min</li>
+                        <li>- 3hr</li>
+                        <li>- 2hr</li>
+                        <li>- 2hr</li>
+                        <li>- 3hr</li>
+                        <li>- 3hr</li>
+                        <li>- 1hr30min</li>
+                        <li>- 1hr30min</li>
+                    </ul>
+                </div> 
+            </div>
+        </div>
+    </section>
+    <!-- SERVICE SECTION ends -->
+    
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+        <div>
+            <h1><span>contact</span> us</h1>
+            <p><img src="map-mark.png"> NEW DELHI IND</p>
+            <p>(For order Contact us via Phone or Email)</p>
+            <p><img src="phone.png"> +91 87566543</p>
+            <p><img src="mail.png"> javed8750547786@gmail.com</p>
+        </div>
+    </section>
+    <!-- CONTACT SECTION ends -->
+    
+    <!-- HELP SECTION -->
+    <section id="help">
+        <div>
+            <h1>help</h1>
+            <p>if you find an error, report us via email</p>
+            <p>thank you!!</p>
+        </div>
+    </section>
+    <!-- HELP SECTION ends -->
+    
+    <!-- FOOTER -->
+    <footer>
+        all right reserved by <span>foodie therapy</span> @2020 <a href="#home"><img src="up-arrow.png" title="To The Top"></a>
+    </footer>
+    <!-- FOOTER ends -->
+    <!-- EXTERNAL JAVASCRIPT FILE -->
+    <script src="script.js"></script>
+</body>
+
+</html>
