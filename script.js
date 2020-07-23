@@ -3,7 +3,7 @@
 window.onload = function () {  // make sure that whole site is loaded
     var p = document.getElementById("preloader");
     var s = document.getElementById("status");
-    var fade = setInterval(fadeOut, 2000);
+    var fade = setInterval(fadeOut, 1000);
     function fadeOut(){
         p.style.opacity = 0;
         s.style.opacity = 0;
